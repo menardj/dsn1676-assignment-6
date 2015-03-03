@@ -140,10 +140,22 @@ div {
 
   background-color: plum;
   border: 1px solid mediumpurple;
-  transition: all 250ms linear;
+  overflow: hidden;
   color: mediumpurple;
 }
 
 .js-stack {
-  animation: stack;
+  animation: list-stack 1s ease-in;
+}
+
+@keyframes list-stack {
+
+0% {
+  max-height: 0px;
+}
+
+100% {
+  max-height: 4em;
+}
+
 }

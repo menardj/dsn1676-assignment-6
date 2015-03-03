@@ -33,9 +33,9 @@ $circle.on('animationend', function (){
 var $btnAppend = $('.btn-append');
 var $list = $('.list');
 
-$btnAppend.on('click', function (e) {
+$btnAppend.on('click', function () {
 	var $li = $('<li>');
 	$list.append($li);
-	$li.addClass ('js-stack')
 	$li.append('New List Item');
+	$li.addClass ('js-stack');
 })
