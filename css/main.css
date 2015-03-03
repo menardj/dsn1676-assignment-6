@@ -83,6 +83,44 @@ div {
   background-color: orange;
 }
 
+.js-circle-bounce {
+  animation: circle-bounce 1s linear;
+}
+
+@keyframes circle-bounce {
+
+  0% {
+    top: calc(50% - 125px);
+  }
+
+  20% {
+    top: calc(50% - 50px);
+  }
+
+  40% {
+   top: calc(50% - 100px);
+  }
+
+  60% {
+    top: calc(50% - 50px);
+  }
+
+  80% {
+    top: calc(50% - 75px);
+  }
+
+  90% {
+    top: calc(50% - 50px);
+    right: 180px;
+  }
+
+  100% {
+    top: calc(50% - 50px);
+    right: 180px;
+  }
+}
+
+
 .list {
   bottom: 1em;
   margin: 0;

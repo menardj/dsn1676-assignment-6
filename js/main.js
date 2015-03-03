@@ -22,9 +22,20 @@ $btnCollapseExpand.on('click', function (){
 var $btnBounce = $('.btn-bounce');
 var $circle = $('.circle');
 
+$btnBounce.on('click', function () {
+	$circle.addClass('js-circle-bounce');
+})
 
+$circle.on('animationend', function (){
+	$circle.removeClass('js-circle-bounce');
+})
 
 var $btnAppend = $('.btn-append');
 var $list = $('.list');
+var $li = $('<li>');
 
-
+$btnAppend.on('click', function () {
+	$list.append($li);
+	$list.addClass ('.list li')
+	$li.append('New List Item <br>');
+})
