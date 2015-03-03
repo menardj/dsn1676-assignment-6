@@ -140,6 +140,10 @@ div {
 
   background-color: plum;
   border: 1px solid mediumpurple;
-
+  transition: all 250ms linear;
   color: mediumpurple;
+}
+
+.js-stack {
+  animation: stack;
 }
